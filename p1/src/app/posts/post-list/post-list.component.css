@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    margin-top: 1rem;
+}
+
+mat-accordion,
+mat-expansion-panel {
+    background-color: mintcream;
+    color: black;
+}
+
+.info-text {
+    text-align: center;
+    color: steelblue;
+}
+
+mat-spinner {
+    margin: auto;
+}
