@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+<ul>
+
+<span>
+<li>
+ <a class="navbar-brand text-white"  [routerLink]="['acc']" > <img src="../../assets/kkk.png">  </a>
+  </span>
+  &nbsp;
+   &nbsp;
+
+  </ul>
+  <span class="spacer"></span>
+  <ul>
+  <li *ngIf="userAuthenticated">
+    <a mat-button  routerLink="/"  >Profil</a>
+  </li>
+
+
+<!--
+    <li *ngIf="userAuthenticated" >
+      <a mat-button routerLink="/create" routerLinkActive="mat-accent">New Post</a>
+    </li>
+-->
+    <li *ngIf="!userAuthenticated">
+      <a mat-button routerLink="/login" routerLinkActive="mat-accent">Login</a>
+    </li>
+    <li *ngIf="!userAuthenticated">
+      <a mat-button routerLink="/signup" routerLinkActive="mat-accent">Signup</a>
+    </li>
+    <li *ngIf="userAuthenticated">
+      <button mat-button (click)="onLogout()"> Logout </button>
+    </li>
+  </ul>
+
+</mat-toolbar>

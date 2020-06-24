@@ -1,0 +1,24 @@
+mat-card {
+    background-color: mintcream;
+    color: black;
+    margin: auto;
+}
+
+mat-form-field,
+textarea {
+    margin: auto;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+}
+
+input {
+    background-color: white;
+    margin: auto;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+mat-spinner {
+    margin: auto;
+}
